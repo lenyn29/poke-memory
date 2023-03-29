@@ -24,7 +24,7 @@ let matches;
 
 const loadPokemon = async () => {
     const randomIds = new Set();
-    while(randomIds.size < 8){
+    while(randomIds.size < 18){
         const randomNumber = Math.ceil(Math.random() * 150);
         randomIds.add(randomNumber)
     }
@@ -76,7 +76,7 @@ const clickCard = (event) => {
             }, 500);
         }else {
             matches++;
-            if (matches === 8){
+            if (matches === 18){
                 alert("Ganaste, ¿quieres volver a jugar?");
                 resetGame();
             }

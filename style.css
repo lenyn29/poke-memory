@@ -1,0 +1,97 @@
+@font-face{
+    font-family: pokemon;
+    src: url(pokemonsolid.ttf)
+}
+
+body{
+    background: rgb(47,79,79);
+
+}
+
+.container{
+    background: rgb(251, 27, 27) ;
+    box-shadow: -10px 5px 2px rgba(139, 0, 0, 0.904);
+    font-family: pokemon;
+    letter-spacing: 5px;
+    margin: 20px auto;
+    min-width: 500px;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 3rem;
+    padding: 10px; 
+    color: #FFCC00; 
+}
+
+header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 740px;
+    height: 160px;
+}
+
+header h1 {
+    -webkit-text-stroke: 3px #0075BE;
+    text-stroke: 3px #0075BE;
+    font-size: 5rem;
+    text-shadow: -10px 5px 2px rgba(10, 40, 95, 0.815);;
+}
+
+.btn{
+    background: rgba(0, 0, 205, 0.945);
+    border: 20px solid rgb(255, 250, 250);
+    border-radius: 50%; 
+    font-size: 2rem; 
+    padding: 20px; 
+    color: rgb(255,250,250); 
+    box-shadow: -2px 2px 2px rgba(25, 25, 112, 0.9);
+}
+  
+
+#game{
+    background: #000;
+    display: grid;
+    grid-template-columns: repeat(4 , 160px);
+    grid-template-rows: repeat(4, 160px);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    box-shadow: -5px 2px 2px rgba(139, 0, 0, 0.938);
+    border: 1px solid rgb(139,0,0);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.front{
+    background-image: url(/ball-master.png);
+    background-size: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #B22222;
+}
+
+.rotated{
+    transform: rotateY(180deg);
+}
+  

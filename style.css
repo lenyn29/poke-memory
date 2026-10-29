@@ -56,7 +56,7 @@ header h1 {
 #game{
     background: #000;
     display: grid;
-    grid-template-columns: repeat(6 , 160px);
+    grid-template-columns: repeat(4, 160px);
     grid-template-rows: repeat(6, 160px);
     grid-gap: 20px;
     padding: 20px;

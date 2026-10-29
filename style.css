@@ -14,8 +14,8 @@ body{
     font-family: pokemon;
     letter-spacing: 5px;
     margin: 20px auto;
-    min-width: 500px;
-    max-width: 1120px;
+    min-width: 300px;
+    max-width: 800px;
     padding: 20px;
     display: flex;
     flex-direction: column;
